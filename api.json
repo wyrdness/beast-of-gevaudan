@@ -1,8 +1,8 @@
 {
   "meta": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "schema_version": "1.0.0",
-    "last_updated": "2026-02-13",
+    "last_updated": "2026-05-07",
     "repository": "https://github.com/wyrdness/beast-of-gevaudan",
     "maintainers": [
       {
@@ -16,111 +16,325 @@
       "content": "CC-BY-4.0"
     }
   },
+
   "phenomenon": {
     "id": "beast-of-gevaudan",
     "name": "Beast of Gévaudan",
-    "aliases": [],
-    "category": "CRYPTID",
-    "subcategory": "Unknown",
-    "tags": [
-      "folklore",
-      "mythology"
+    "aliases": [
+      { "name": "La Bête du Gévaudan", "language": "French", "region": "Gévaudan, France", "meaning": "The Beast of Gévaudan" },
+      { "name": "La Bête", "language": "French", "region": "France", "meaning": "The Beast" }
     ],
-    "status": "documented",
+    "category": "CRYPTID",
+    "subcategory": "Man-eating canid (historical)",
+    "tags": [
+      "cryptid",
+      "historical",
+      "europe",
+      "france",
+      "18th-century",
+      "wolf",
+      "man-eater",
+      "ancien-regime"
+    ],
+    "status": "historical",
     "description": {
-      "summary": "The Beast of Gévaudan (French: La Bête du Gévaudan) is one of history's most documented and mysterious cryptid cases, representing a series of brutal attacks that terrorized the former province of Gévaudan in south-central France between 1764 and 1767.",
-      "full": "The Beast of Gévaudan (French: La Bête du Gévaudan) is one of history's most documented and mysterious cryptid cases, representing a series of brutal attacks that terrorized the former province of Gévaudan in south-central France between 1764 and 1767. Over the course of three years, a wolf-like creature or creatures killed between 60 and 100 people, primarily women and children, in a reign of terror that captured the attention of King Louis XV and the entire French nation. What sets the Beast of Gévaudan apart from typical wolf attack cases is the unprecedented ferocity, frequency, and unusual nature of the attacks, combined with the creature's apparent resistance to being killed despite organized hunts involving thousands of men. The case remains one of the most thoroughly documented cryptid incidents in history, with extensive contemporary records, government correspondence, and eyewitness accounts surviving to the present day."
+      "summary": "An animal or animals that killed roughly 100 people, mostly women and children, in the former French province of Gévaudan between 1764 and 1767. The historical case generated nationwide panic, royal hunts, and centuries of debate over its zoological identity.",
+      "full": "The Beast of Gévaudan (La Bête du Gévaudan) is the historical name given to a man-eating animal — or more likely a series of large canids — that terrorized the former French province of Gévaudan, in the Margeride Mountains of south-central France, between 1764 and 1767. Contemporary accounts describe a tawny, wolf-like creature larger than a wolf, with a long tufted tail and dark dorsal stripe, that targeted the head and neck of solitary herders, mostly women and children. Estimates vary; a 1987 quantitative study counted 210 attacks resulting in 113 deaths and 49 injuries, with 98 of the victims partly eaten. The case escalated into a national crisis under King Louis XV, who dispatched first the Norman wolf-hunter Jean-Charles-Marc-Antoine Vaumesle d'Enneval and then his own gun-bearer François Antoine. Antoine killed a large wolf at the Chazes Abbey on 21 September 1765, but attacks resumed in December. The killings finally ended after local hunter Jean Chastel shot a creature on 19 June 1767 during a hunt organized by the Marquis d'Apcher. Modern scholars overwhelmingly favour wolves (single, multiple, or wolf-dog hybrids) as the explanation."
     },
     "etymology": {
-      "origin": "Unknown",
-      "meaning": "To be documented",
-      "first_use": "Unknown"
+      "origin": "French. Gévaudan was the historical pre-revolutionary province corresponding largely to modern Lozère and parts of Haute-Loire.",
+      "meaning": "'The Beast of Gévaudan' — the unnamed man-eating animal of that province.",
+      "first_use": "Contemporary 1764–1767 French press, especially the Courrier d'Avignon and the Gazette de France"
     }
   },
+
   "classification": {
     "taxonomy": {
       "category": "CRYPTID",
-      "type": "Unknown",
-      "subtype": "Unknown",
-      "variant": "Unknown"
+      "type": "Historical man-eating canid",
+      "subtype": "Wolf or wolf-dog hybrid (probable)",
+      "variant": "18th-century French"
     },
-    "related_phenomena": []
+    "related_phenomena": [
+      { "id": "wolves-of-paris", "name": "Wolves of Paris", "relationship": "similar", "description": "1450 wolf attacks in and around Paris" },
+      { "id": "beast-of-cevennes", "name": "Beast of the Cévennes", "relationship": "similar", "description": "Other 18th–19th-century French man-eating canid cases" },
+      { "id": "champawat-tiger", "name": "Champawat Tiger", "relationship": "similar", "description": "Notable historical man-eating predator" }
+    ]
   },
+
   "characteristics": {
     "physical": {
-      "features": [],
-      "morphology": "See README.md for detailed physical description"
+      "height": { "min": 0.7, "max": 1.0, "unit": "meters", "confidence": "low" },
+      "weight": { "min": 50, "max": 90, "unit": "kilograms", "confidence": "low" },
+      "coloration": ["tawny", "russet", "with dark dorsal stripe and tuft on the tail"],
+      "features": [
+        { "feature": "Wolf-like body, larger than a wolf", "description": "Contemporary witnesses described a creature 'like a wolf, yet not a wolf', notably larger than local wolves", "frequency": "always" },
+        { "feature": "Long tufted tail", "description": "A tail described as longer than a wolf's, ending in a tuft", "frequency": "common" },
+        { "feature": "Dark dorsal stripe", "description": "A dark stripe down the back is recurrent in contemporary descriptions", "frequency": "common" },
+        { "feature": "Powerful jaws / unusual teeth", "description": "Reports emphasize formidable teeth and bite power", "frequency": "common" }
+      ],
+      "morphology": "Large quadrupedal canid; modern reconstructions favour a very large wolf, multiple wolves acting independently or in pack, or a wolf-dog hybrid. Some 19th- and 20th-century writers proposed escaped exotic predators (hyena, lion-dog), but these explanations are not supported by primary evidence."
     },
-    "abilities": [],
+    "abilities": [
+      { "ability": "Targeted attacks on solitary humans", "description": "Reports note the beast's preference for lone women, children, and herders, often striking the throat or face", "frequency": "common", "evidence_level": "documented" },
+      { "ability": "Evasion of large hunts", "description": "Survived multiple massive royal-sponsored hunts before being killed", "frequency": "common", "evidence_level": "documented" }
+    ],
     "behavior": {
-      "activity_period": "unknown",
-      "disposition": "unknown",
-      "habitat_preference": []
+      "activity_period": "diurnal",
+      "disposition": "aggressive",
+      "social_structure": "variable",
+      "habitat_preference": ["Margeride Mountains", "open pastureland", "forest edges", "isolated hamlets"],
+      "diet": "Human prey (women, children, isolated herders) and presumably livestock between attacks",
+      "patterns": [
+        "Attacks mostly during daylight herding hours",
+        "Preferential targeting of head, throat, and face",
+        "Geographic dispersal across roughly 90 × 80 km (56 × 50 mi)"
+      ]
     }
   },
+
   "distribution": {
     "range": {
-      "description": "Unknown",
-      "continents": [],
-      "countries": [],
-      "regions": []
+      "description": "Former French province of Gévaudan in the Margeride Mountains of south-central France, corresponding mainly to the modern department of Lozère and parts of Haute-Loire.",
+      "continents": ["Europe"],
+      "countries": ["France"],
+      "regions": ["Gévaudan", "Lozère", "Haute-Loire", "Margeride Mountains", "Auvergne (modern)"]
     },
-    "hotspots": [],
+    "hotspots": [
+      {
+        "name": "Mercoire Forest near Langogne",
+        "location": {
+          "description": "Forest near Langogne in eastern Gévaudan, site of the first reported attack",
+          "country": "France",
+          "region": "Lozère",
+          "coordinates": { "latitude": 44.7281, "longitude": 3.8597 }
+        },
+        "peak_period": "1764",
+        "notes": "Site of the first encounter (early summer 1764) and the first official victim, Jeanne Boulet (30 June 1764)"
+      },
+      {
+        "name": "Mont Mouchet / La Sogne d'Auvers",
+        "location": {
+          "description": "Site near La Sogne d'Auvers where Jean Chastel shot the beast on 19 June 1767",
+          "country": "France",
+          "region": "Lozère",
+          "coordinates": { "latitude": 44.85, "longitude": 3.5 }
+        },
+        "peak_period": "1767",
+        "notes": "Site of the killing of the beast by Jean Chastel during a hunt organized by the Marquis d'Apcher"
+      }
+    ],
     "temporal": {
       "first_recorded": {
-        "date": "Unknown",
+        "date": "1764-06-01",
         "circa": true,
-        "source": "Traditional folklore"
-      }
+        "source": "Contemporary 1764 French press (Courrier d'Avignon, Gazette de France)"
+      },
+      "peak_activity_periods": [
+        { "period": "1764-06–1765-09", "description": "First wave of attacks, ending with François Antoine's killing of a large wolf at Chazes Abbey (21 September 1765)" },
+        { "period": "1765-12–1767-06", "description": "Second wave; Marquis d'Apcher organizes the final hunt; Jean Chastel kills the beast on 19 June 1767" }
+      ]
     }
   },
+
   "history": {
     "origins": {
-      "cultural_roots": "Unknown",
-      "earliest_accounts": "See README.md for historical details",
-      "folklore_connections": "Unknown"
+      "cultural_roots": "Ancien régime rural France, where wolf attacks on humans were not unknown but rarely on this scale.",
+      "earliest_accounts": "First encounter in early summer 1764 in the Mercoire Forest near Langogne; first recorded killing of Jeanne Boulet, age 14, on 30 June 1764 near Les Hubacs.",
+      "folklore_connections": "Although understood at the time within ordinary categories of dangerous wolves and (in some accounts) supernatural beings, the case became a touchstone of French werewolf and bête anthropophage folklore."
     },
-    "timeline": []
+    "timeline": [
+      { "date": "1764-06-01", "event": "First reported encounter: a young cowherd in the Mercoire Forest near Langogne is attacked by a beast 'like a wolf, yet not a wolf', driven off by her cattle", "significance": "Beginning of the case", "source": "Smith, J. M. (2011), Monsters of the Gévaudan" },
+      { "date": "1764-06-30", "event": "Jeanne Boulet, age 14, is killed near Les Hubacs (commune of Saint-Étienne-de-Lugdarès) — first officially recorded victim", "significance": "First documented fatality", "source": "Parish register, Saint-Étienne-de-Lugdarès" },
+      { "date": "1765-09-21", "event": "François Antoine, the king's gunbearer, kills a very large wolf at the Chazes Abbey; the corpse is sent to Versailles", "significance": "Royal hunt's apparent success; attacks briefly subside", "source": "Courrier d'Avignon, October 1765" },
+      { "date": "1765-12-01", "event": "Attacks resume in December 1765 in southern Gévaudan", "significance": "Demonstrates that the original beast was not the killed wolf, or that multiple animals were involved", "source": "Smith, J. M. (2011), Monsters of the Gévaudan" },
+      { "date": "1767-06-19", "event": "Jean Chastel kills a large canid during a hunt organized by the Marquis d'Apcher near La Sogne d'Auvers; attacks cease", "significance": "End of the case", "source": "Marin Report (autopsy by surgeon Antoine Boulanger / Marin)" }
+    ],
+    "modern_era": "The case has been studied extensively by historians, zoologists, and folklorists. Jay M. Smith's 2011 academic monograph Monsters of the Gévaudan reads the affair as an event in 18th-century media culture as much as a wildlife crisis. Modern museums in Saugues and Marvejols, and the Maison de la Bête in Auvers, host exhibits. Modern zoological consensus favours wolves (likely multiple animals across three years), with wolf-dog hybridization sometimes proposed."
   },
+
   "sightings": {
     "statistics": {
-      "total_documented": 0,
-      "verified": 0,
+      "total_documented": 210,
+      "verified": 113,
       "disputed": 0,
-      "debunked": 0
+      "debunked": 0,
+      "date_range": { "earliest": "1764-06", "latest": "1767-06-19" }
     },
-    "notable": [],
+    "notable": [
+      {
+        "id": "beast-of-gevaudan-sighting-1764-jeanne-boulet",
+        "name": "Killing of Jeanne Boulet",
+        "date": { "value": "1764-06-30", "precision": "exact" },
+        "location": {
+          "description": "Near Les Hubacs (commune of Saint-Étienne-de-Lugdarès), eastern Gévaudan",
+          "country": "France",
+          "region": "Lozère",
+          "locality": "Saint-Étienne-de-Lugdarès",
+          "coordinates": { "latitude": 44.6669, "longitude": 3.9500, "precision": "approximate" }
+        },
+        "witnesses": { "count": 0, "types": ["Parish register"], "credibility_factors": ["Recorded in contemporary parish records"] },
+        "description": "Jeanne Boulet, a 14-year-old girl, was killed by the beast near Les Hubacs. Her death was recorded in the parish register and is the first official victim of the Beast of Gévaudan.",
+        "credibility": { "rating": "high", "factors": ["Contemporary parish record", "Multiple historical sources concur"], "notes": "First official victim of the Beast." },
+        "sources": ["Saint-Étienne-de-Lugdarès parish register", "Smith, J. M. (2011), Monsters of the Gévaudan"],
+        "featured": true
+      },
+      {
+        "id": "beast-of-gevaudan-sighting-1765-chazes",
+        "name": "François Antoine kills the 'wolf of Chazes'",
+        "date": { "value": "1765-09-21", "precision": "exact" },
+        "location": {
+          "description": "Forest near the Chazes Abbey",
+          "country": "France",
+          "region": "Haute-Loire",
+          "coordinates": { "latitude": 45.1167, "longitude": 3.4500, "precision": "approximate" }
+        },
+        "witnesses": { "count": 2, "types": ["François Antoine (king's gunbearer)", "François Antoine's nephew"], "credibility_factors": ["Royal hunt with multiple participants", "Carcass examined and shipped to Versailles"] },
+        "description": "On 21 September 1765, François Antoine and his nephew shot a large wolf in the forest of Chazes; the animal was about 1.7 m (5 ft 7 in) long. The carcass was stuffed and sent to the royal court at Versailles. Antoine was rewarded with money and honors. Attacks briefly stopped, but resumed in December.",
+        "credibility": { "rating": "high", "factors": ["Royal documentation", "Carcass preserved for inspection"], "notes": "The killed wolf was not in fact the (or not the only) Beast." },
+        "sources": ["Courrier d'Avignon (Oct 1765)", "Smith, J. M. (2011), Monsters of the Gévaudan"],
+        "featured": true
+      },
+      {
+        "id": "beast-of-gevaudan-sighting-1767-chastel",
+        "name": "Jean Chastel kills the Beast",
+        "date": { "value": "1767-06-19", "precision": "exact" },
+        "location": {
+          "description": "Hunt near La Sogne d'Auvers, on Mont Mouchet, organized by the Marquis d'Apcher",
+          "country": "France",
+          "region": "Lozère",
+          "coordinates": { "latitude": 44.85, "longitude": 3.5, "precision": "approximate" }
+        },
+        "witnesses": { "count": 1, "types": ["Local farmer-hunter (Jean Chastel)", "Other members of the Marquis d'Apcher's hunt"], "credibility_factors": ["Multi-witness hunt", "Subsequent autopsy by surgeon Antoine Boulanger ('Marin Report')"] },
+        "description": "During a hunt organized by the Marquis d'Apcher on Mont Mouchet, local hunter Jean Chastel shot and killed a large canid. The carcass was paraded through the region and examined by surgeon Antoine Boulanger; the resulting Marin Report described an animal larger than a wolf with unusual dentition. After this killing, the attacks ceased.",
+        "credibility": { "rating": "high", "factors": ["Multi-witness hunt", "Contemporary autopsy", "Cessation of attacks"], "notes": "End of the case." },
+        "sources": ["Marin Report (1767)", "Smith, J. M. (2011), Monsters of the Gévaudan"],
+        "featured": true
+      }
+    ],
     "database_path": "./sightings/"
   },
+
   "evidence": {
-    "physical": [],
+    "physical": [
+      {
+        "id": "beast-of-gevaudan-evidence-marin-report",
+        "type": "autopsy report",
+        "name": "Marin Report (Antoine Boulanger autopsy)",
+        "date": "1767-06",
+        "description": "Contemporary autopsy of the canid killed by Jean Chastel on 19 June 1767, describing an animal larger than a wolf and detailing dentition.",
+        "status": "verified",
+        "analysis": "The autopsy is preserved in archives but the carcass itself was lost (sent to Versailles in summer heat and reportedly disposed of due to decomposition).",
+        "source": "Boulanger / Marin Report (1767)"
+      }
+    ],
     "photographic": [],
     "video": [],
     "audio": [],
-    "trace": []
+    "trace": [],
+    "documentary": [
+      {
+        "id": "beast-of-gevaudan-evidence-press",
+        "type": "newspaper archive",
+        "name": "Courrier d'Avignon and Gazette de France coverage (1764–1767)",
+        "date": "1764-1767",
+        "description": "Contemporary French press coverage of the attacks, hunts, and royal interventions.",
+        "status": "verified",
+        "analysis": "A primary historical source; analysed extensively in Jay M. Smith's Monsters of the Gévaudan (2011).",
+        "source": "Bibliothèque nationale de France press archives"
+      }
+    ]
   },
+
   "theories": {
-    "paranormal": [],
-    "scientific": [],
-    "skeptical": []
+    "paranormal": [
+      {
+        "name": "Werewolf / loup-garou",
+        "description": "Contemporary rural belief that the Beast was a werewolf or supernatural creature, sometimes blamed on a particular suspect (folklore around Jean Chastel's son Antoine).",
+        "proponents": ["Local 18th-century rural folklore"],
+        "evidence_cited": ["Apparent invulnerability to early hunts", "Ferocity beyond ordinary wolves"]
+      }
+    ],
+    "scientific": [
+      {
+        "name": "Multiple wolves",
+        "description": "The attacks across three years and 90 × 80 km were almost certainly the work of multiple wolves rather than a single individual, possibly several distinct man-eaters in succession.",
+        "proponents": ["Most modern historians and zoologists, including Jay M. Smith (2011)"],
+        "evidence_cited": ["Geographic dispersal", "Resumption of attacks after Antoine's 1765 wolf was killed", "Wolf population in Gévaudan at the time"]
+      },
+      {
+        "name": "Wolf-dog hybrid",
+        "description": "Some descriptions (size, coat, dorsal stripe) are consistent with a wolf-dog hybrid, possibly resulting from local mastiffs interbreeding with wolves.",
+        "proponents": ["Karl-Hans Taake (zoologist, 2010s)"],
+        "evidence_cited": ["Reported coloration and size", "Behavioural boldness atypical of wild wolves"]
+      },
+      {
+        "name": "Exotic predator hypothesis",
+        "description": "Older speculation suggested an escaped exotic animal (hyena, lion, or trained 'killer dog'). Most historians reject this for lack of evidence.",
+        "proponents": ["Various 19th- and 20th-century popular writers"],
+        "evidence_cited": ["Atypical descriptions in some accounts"]
+      }
+    ],
+    "skeptical": [
+      {
+        "name": "Media-amplified panic over real but ordinary wolf attacks",
+        "description": "Real wolf attacks were amplified by France's first national news media into a singular 'Beast'; folklore consolidated separate incidents into one creature.",
+        "proponents": ["Jay M. Smith (2011), Monsters of the Gévaudan"],
+        "evidence_cited": ["Surge of contemporary press attention", "Documented variability in eyewitness descriptions"]
+      }
+    ]
   },
+
   "cultural": {
     "folklore": {
-      "traditions": [],
-      "stories": [],
-      "beliefs": "See README.md for cultural context"
+      "traditions": [
+        "Gévaudan (Lozère) regional folklore",
+        "French loup-garou tradition"
+      ],
+      "stories": [
+        "The Marquis d'Apcher's hunt and Jean Chastel's killing of the Beast",
+        "Marie-Jeanne Valet's reported single combat with the Beast (11 August 1765)"
+      ],
+      "beliefs": "In contemporary Gévaudan villages, the Beast was variously understood as a very large wolf, a divine punishment, or a werewolf. Today it is a centerpiece of regional identity and tourism."
     },
     "popular_culture": {
-      "literature": [],
-      "film_tv": [],
-      "games": [],
-      "other": []
+      "literature": [
+        "Jay M. Smith, Monsters of the Gévaudan: The Making of a Beast (Harvard University Press, 2011)",
+        "Henri Pourrat, Histoire fidèle de la bête en Gévaudan (1946)",
+        "Robert Louis Stevenson, Travels with a Donkey in the Cévennes (1879) — references the Beast"
+      ],
+      "film_tv": [
+        "Brotherhood of the Wolf / Le Pacte des loups (2001, Christophe Gans)",
+        "The Beast (BBC documentary, 2003)"
+      ],
+      "games": [
+        "Assassin's Creed Unity: Dead Kings (2015) — 'Beast of Saint-Denis' subplot inspired by Gévaudan",
+        "Werewolf: The Apocalypse (White Wolf) — references"
+      ],
+      "other": [
+        "Musée Fantastique de la Bête du Gévaudan (Saugues)",
+        "Maison de la Bête (Auvers)",
+        "Statue of Marie-Jeanne Valet at Auvers"
+      ]
     }
   },
+
   "research": {
-    "researchers": [],
-    "organizations": [],
-    "ongoing_studies": "None documented"
+    "researchers": [
+      { "name": "Jay M. Smith", "affiliation": "University of North Carolina at Chapel Hill (history)", "contribution": "Definitive academic monograph: Monsters of the Gévaudan (2011)", "period": "2000s–present" },
+      { "name": "Karl-Hans Taake", "affiliation": "Independent zoologist", "contribution": "Zoological reconstruction favouring wolf-dog hybrid", "period": "2010s" }
+    ],
+    "organizations": [
+      { "name": "Musée Fantastique de la Bête du Gévaudan (Saugues)", "url": "https://www.mairie-saugues.fr", "focus": "Local museum dedicated to the case" }
+    ],
+    "ongoing_studies": "Ongoing historical research and occasional zoological papers. Local archives in Lozère and Haute-Loire continue to be re-examined."
   },
-  "sources": []
+
+  "sources": [
+    { "id": "wiki-gevaudan", "type": "website", "title": "Beast of Gévaudan", "publication": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Beast_of_G%C3%A9vaudan", "accessed": "2026-05-07" },
+    { "id": "smith-2011", "type": "book", "title": "Monsters of the Gévaudan: The Making of a Beast", "authors": ["Jay M. Smith"], "publication": "Harvard University Press", "date": "2011", "isbn": "978-0674047167" },
+    { "id": "history-com-gevaudan", "type": "article", "title": "What Was the Beast of Gévaudan?", "publication": "History.com", "url": "https://www.history.com/articles/beast-gevaudan-france-theories", "accessed": "2026-05-07" },
+    { "id": "smithsonian-gevaudan", "type": "article", "title": "When the Beast of Gévaudan Terrorized France", "publication": "Smithsonian Magazine", "url": "https://www.smithsonianmag.com/history/beast-gevaudan-terrorized-france-countryside-180963820/", "accessed": "2026-05-07" },
+    { "id": "natgeo-gevaudan", "type": "article", "title": "Did a 'werewolf' really terrorize France in the 1700s?", "publication": "National Geographic", "url": "https://www.nationalgeographic.com/history/history-magazine/article/did-a-werewolf-really-terrorize-france-in-the-1700s", "accessed": "2026-05-07" }
+  ]
 }
